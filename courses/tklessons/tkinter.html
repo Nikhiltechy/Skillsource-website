@@ -1,0 +1,91 @@
+<!-- courses/tkinter.html -->
+<!DOCTYPE html>
+<html lang="en" class="tkinter-page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tkinter Course - SkillSource</title>
+
+
+  <!-- Global styles (used on all pages) -->
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="/css/tkinter.css">
+
+</head>
+
+
+<body>
+  <nav>
+     <div class = "search-container">
+          <input type="text" id = "searchInput" placeholder="search courses...">
+          <button onclick="searchSite()"> 🔍 </button>
+        </div>
+        <ul> 
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="../pylessons/python.html" target="_blank">Python </a></li>
+          <li><a href="tkinter.html" target="_blank">Tkinter</a></li>
+
+        </ul>
+      </nav>
+  <main class="page-content">
+    <div class="tk-sidebar">
+      <h3>Tkinter Course form Basic to Advance</h3>
+      <a href="tkbasics/tksyntax.html">Tkinter Basics </a>
+      <a href="#">Widgets</a>
+      <a href="#">API</a>
+      <a href="#">Variables</a>
+      <a href="#">Styling</a>
+      <a href="#">Layouts</a>
+      <a href="#">Images</a>
+      <a href="#">Multi-windows</a>
+
+    </div>
+
+    <div class="tk-content">
+      <h1>Tkinter Ultimate Course</h1>
+
+      <div class="tk-card">
+        <h3>Learn Tkinter</h3>
+        <p>Tkinter is the standard GUI library for Python. You can create windows, buttons, labels, and entire
+          interfaces using it.</p>
+        <p>It is simple, powerful, and fun to use!</p>
+        <a href="#">Start learning Tkinter now »</a>
+      </div>
+
+      <h2>What is Tkinter?</h2>
+      <p>Tkinter is Python's built-in module for GUI development. It lets you build desktop applications with just
+        Python code.</p>
+        
+
+      <div class="tk-nav-buttons">
+        <a href="#">← Previous</a>
+        <a href="#">Next →</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SkillSource Academy by Nikhil. All rights reserved.</p>
+  </footer>
+  <script>
+  function searchSite() {
+
+    const input = document.getElementById("searchInput").value.toLowerCase();
+
+    if (input.includes("python")) {
+      window.location.href = "../pylessons/python.html";
+    } else if (input.includes("tkinter")) {
+      window.location.href = "tkinter.html";
+    } else {
+      alert("No matching course found.");
+    }
+
+  }
+</script>
+</body>
+
+</html>

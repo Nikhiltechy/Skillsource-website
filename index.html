@@ -1,0 +1,107 @@
+
+<script>
+  // Check login state
+  const user = localStorage.getItem('username');
+  if (!user) {
+    window.location.href = 'login.html'; // redirect if not logged in
+  }
+</script>
+
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en" class =  "home-page">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skill Source Academy</title>
+  <link rel="stylesheet" href="css/main.css" />
+
+<style>
+    /* Minimal extra CSS for sticky footer effect */
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .page-content {
+      flex: 1;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+
+
+  <div class="page-content">  
+    <header class="header">
+      <nav>
+        <h1>SkillSource Academy</h1>
+        <div id="user-greet"></div>
+<button onclick="logout()">Logout</button>
+
+<script>
+  const username = localStorage.getItem('username');
+  document.getElementById('user-greet').innerText = `Welcome, ${username}`;
+
+  function logout() {
+    localStorage.removeItem('username');
+    window.location.href = 'login.html';
+  }
+</script>
+
+        <div class = "search-container">
+          <input type="text" id = "searchInput" placeholder="search courses...">
+          <button onclick="searchSite()"> 🔍 </button>
+        </div>
+        <ul> 
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses/pylessons/python.html" target="_blank">Python </a></li>
+          <li><a href="courses/tklessons/tkinter.html" target="_blank">Tkinter</a></li>
+
+        </ul>
+        
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Learn Anything, One Step at a Time</h2>
+      <p>Explore free educational content curated by Nikhil.</p>
+    </section>
+
+    <section class="courses">
+      <h3>Available Courses</h3>
+      <div class="course-grid">
+        <a href="courses/pylessons/python.html" target="_blank" class="card">Python</a>
+        <a href="courses/tklessons/tkinter.html" target="_blank" class="card">Tkinter</a>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 SkillSource Academy by Nikhil. All rights reserved.</p>
+  </footer>
+<script>
+  function searchSite() {
+
+    const input = document.getElementById("searchInput").value.toLowerCase();
+
+    if (input.includes("python")) {
+      window.location.href = "courses/pylessons/python.html";
+    } else if (input.includes("tkinter")) {
+      window.location.href = "courses/tklessons/tkinter.html";
+    } else {
+      alert("No matching course found.");
+    }
+
+  }
+</script>
+
+</body>
+</html>
+<!-- index.html ends here -->
+ 

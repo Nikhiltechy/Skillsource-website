@@ -1,0 +1,67 @@
+/* css/markdown.css */
+
+.md-sidebar {
+  color : white;
+  width: 250px;
+  height: 100vh;
+  background: black;
+  padding: 20px;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+  position: sticky;
+  top : 0;
+}
+
+.md-sidebar h3 {
+  margin-top: 0;
+}
+
+.md-sidebar a {
+  display: block;
+  padding: 8px 10px;
+  color: rgb(166, 171, 119); 
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.md-sidebar a:hover {
+  background-color: #ddd;
+}
+
+.md-content {
+  margin-left: 0px;
+  flex: 1;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;}
+
+.md-content h1 {
+  margin-top: 0;
+}
+
+.md-card {
+  background: rgb(236, 234, 232);
+  padding: 15px;
+  border-left: 5px solid black;
+  margin-bottom: 20px;
+}
+
+.md-nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.md-nav-buttons a {
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border-radius: 5px;
+}
+
+  main.page-content {
+      flex: 1;
+      /* Fills remaining height between header and footer */
+      display: flex;
+    }
