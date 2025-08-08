@@ -26,10 +26,10 @@ nav ul li a {
   text-decoration: none;
 }
 nav ul li a:hover {
-  text-decoration: underline;
+  color: #00bfff;
 }
 .hero {
-  background: #f4f4f4;
+  background: #eaf4ff;
   padding: 40px;
   text-align: center;
 }
@@ -76,7 +76,7 @@ html,
 
   .search-container button {
   padding: 6px 10px;
-  background-color: #007bff;
+  background-color: #00bfff;
   color: white;
   border: none;
   border-radius: 4px;
@@ -86,4 +86,7 @@ html,
   padding: 6px 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-}
+ }
+  .search-container button :hover{
+  background-color: #009fdc;
+   }

@@ -19,14 +19,15 @@
 .md-sidebar a {
   display: block;
   padding: 8px 10px;
-  color: rgb(166, 171, 119); 
+  color: rgb(231, 231, 226); 
   margin-bottom: 5px;
   border-radius: 5px;
 }
 
 .md-sidebar a:hover {
-  background-color: #ddd;
+  background-color: #00bfff;
 }
+
 
 .md-content {
   margin-left: 0px;
